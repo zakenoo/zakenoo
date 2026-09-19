@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Zak — calm, local-first software for minds that wander">
+  <style>
+    .bg { fill: #000; }
+    .ink { fill: #F2F2F2; }
+    .dim { fill: #8A8A8A; }
+    .line { stroke: #2A2A2A; }
+    .st1 { fill: #EEEEEE; } .st2 { fill: #CFCFCF; } .st3 { fill: #B3B3B3; }
+    .font { font-family: 'Segoe UI', 'Inter', -apple-system, 'Helvetica Neue', Arial, sans-serif; }
+    .s { opacity: 0; animation: drop .9s cubic-bezier(.2,.9,.25,1.15) forwards; }
+    .s1 { animation-delay: .25s; } .s2 { animation-delay: .75s; } .s3 { animation-delay: 1.25s; }
+    .t { opacity: 0; animation: rise .9s ease-out forwards; }
+    .t1 { animation-delay: 1.7s; } .t2 { animation-delay: 2.0s; } .t3 { animation-delay: 2.3s; }
+    .ground { stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: draw 1.6s ease-out .1s forwards; }
+    .dot { animation: pulse 2.4s ease-in-out 3s infinite; }
+    @keyframes drop { 0% { opacity: 0; transform: translateY(-70px); } 60% { opacity: 1; } 100% { opacity: 1; transform: translateY(0); } }
+    @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .25; } }
+  </style>
+
+  <rect class="bg" width="1200" height="320" rx="18"/>
+  <line class="line ground" x1="80" y1="236" x2="1120" y2="236" stroke-width="1.5"/>
+
+  <!-- le cairn -->
+  <g class="s s1"><ellipse class="st1" cx="195" cy="212" rx="80" ry="24"/></g>
+  <g class="s s2"><ellipse class="st2" cx="195" cy="161" rx="59" ry="20"/></g>
+  <g class="s s3"><ellipse class="st3" cx="195" cy="120" rx="35" ry="16"/></g>
+
+  <g class="font">
+    <text class="ink t t1" x="340" y="150" font-size="64" font-weight="600" letter-spacing="-1.5">Zak</text>
+    <text class="dim t t2" x="342" y="196" font-size="24">Calm, local-first software for minds that wander.</text>
+    <g class="t t3">
+      <circle class="ink dot" cx="349" cy="273" r="4.5"/>
+      <text class="dim" x="364" y="279" font-size="17">currently building</text>
+      <text class="ink" x="522" y="279" font-size="17" font-weight="600">Kairn</text>
+    </g>
+  </g>
+</svg>

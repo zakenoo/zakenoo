@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="230" viewBox="0 0 1200 230" role="img" aria-label="Kairn — a calm, local-first day planner for Windows">
+  <style>
+    .card { fill: #0A0A0A; stroke: #262626; }
+    .ink { fill: #F2F2F2; }
+    .dim { fill: #8A8A8A; }
+    .chip { fill: none; stroke: #333; }
+    .st1 { fill: #EEEEEE; } .st2 { fill: #CFCFCF; } .st3 { fill: #B3B3B3; }
+    .tile { fill: #000; stroke: #262626; }
+    .font { font-family: 'Segoe UI', 'Inter', -apple-system, 'Helvetica Neue', Arial, sans-serif; }
+    .arrow { animation: nudge 2.8s ease-in-out infinite; }
+    @keyframes nudge { 0%, 70%, 100% { transform: translateX(0); } 80% { transform: translateX(6px); } }
+  </style>
+
+  <rect class="card" x="1" y="1" width="1198" height="228" rx="18" stroke-width="1.5"/>
+
+  <rect class="tile" x="40" y="40" width="150" height="150" rx="28" stroke-width="1.5"/>
+  <ellipse class="st1" cx="115" cy="147" rx="47" ry="14"/>
+  <ellipse class="st2" cx="115" cy="117" rx="35" ry="12"/>
+  <ellipse class="st3" cx="115" cy="93" rx="21" ry="9.5"/>
+
+  <g class="font">
+    <text class="ink" x="228" y="84" font-size="36" font-weight="600" letter-spacing="-.5">Kairn</text>
+    <text class="dim" x="229" y="120" font-size="19">A calm, local-first day planner for Windows, made for minds that wander.</text>
+
+    <g font-size="14">
+      <rect class="chip" x="229" y="146" width="112" height="30" rx="15"/><text class="ink" x="285" y="166" text-anchor="middle">ADHD-friendly</text>
+      <rect class="chip" x="351" y="146" width="146" height="30" rx="15"/><text class="ink" x="424" y="166" text-anchor="middle">Pomodoro rhythm</text>
+      <rect class="chip" x="507" y="146" width="122" height="30" rx="15"/><text class="ink" x="568" y="166" text-anchor="middle">Focus guard</text>
+      <rect class="chip" x="639" y="146" width="100" height="30" rx="15"/><text class="ink" x="689" y="166" text-anchor="middle">Local AI</text>
+      <rect class="chip" x="749" y="146" width="120" height="30" rx="15"/><text class="ink" x="809" y="166" text-anchor="middle">No account</text>
+    </g>
+
+    <text class="dim" x="1150" y="200" font-size="14" text-anchor="end">C# · WPF · .NET 10 · Windows</text>
+    <g class="arrow"><text class="ink" x="1150" y="125" font-size="34" text-anchor="end">→</text></g>
+  </g>
+</svg>
